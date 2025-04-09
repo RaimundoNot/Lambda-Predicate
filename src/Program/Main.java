@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Locale;
 
 import Entities.Product;
-import util.priceUpdate;
 
 public class Main {
 
@@ -19,7 +18,7 @@ public class Main {
 		 list.add(new Product("Tablet", 350.50));
 		 list.add(new Product("HD Case", 80.90));
 		 
-		 list.forEach(Product::staticPriceUpdte);
+		 list.forEach(Product::nonStaticPriceUpdte);
 		 
 		 list.forEach(System.out::println);
 	}
